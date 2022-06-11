@@ -1,0 +1,64 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: aliceblue;
+}
+
+/*  ============= MENU ===============*/
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: rgb(223, 240, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    color: #000;
+	width: 50%;
+	text-align: center;
+}
+
+
+
+
+#ingresoCorrectoPlanta{
+    text-align: center;
+    color: green;
+
+}
+
+
+#ingresoCorrectoFamilia{
+    text-align: center;
+    color: green;
+
+}
+
+
+footer{
+    background-color: #1b2a4e;
+    min-height: 100px;
+    
+}
+
+footer div {
+    margin-top: 25px;
+}
+
+footer{
+    background-color: #1b2a4e;
+    min-height: 100px;
+    
+}
+
+footer div {
+    margin-top: 25px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #f3f3f3;
+    text-align: center;
+}
