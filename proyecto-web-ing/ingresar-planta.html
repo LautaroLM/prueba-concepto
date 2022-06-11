@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/ingresar-planta.css">
+
+    <script src="./js/ingresarPlanta.js"></script>
+
+
+    <title>Ingresar planta</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-primary
+    d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Contactanos system@gmail.com</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">Sistema Clima</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ingresar-planta.html">Ingresar planta</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <h1 id="ingresoCorrectoPlanta" style="display: none;">Se ingresó correctamente la planta </h1>
+    <h1 id="ingresoCorrectoFamilia" style="display: none;">Se ingresó correctamente la familia </h1>
+
+    <div class="col d-flex justify-content-center" >
+        <div class="card" id="formularioPlanta">
+            <h2>Ingrese la planta</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombreComun" class="form-label">Nombre común:</label>
+                    <input type="text" class="form-control" id="nombreComun" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="nroAlmacen" class="form-label">Número de almacen:</label>
+                    <input type="number" class="form-control" id="nroAlmacen" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="fila" class="form-label">fila:</label>
+                    <input type="number" class="form-control" id="fila" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="columna" class="form-label">columna:</label>
+                    <input type="number" class="form-control" id="columna" required="required">
+                </div>
+                
+            </form>
+            <button id="ingresarPlanta" type="submit" class="btn btn-primary" onclick="agregarPlanta()">Ingresar planta</button>
+        </div>
+    </div>
+
+    <div class="col d-flex justify-content-center" >
+        <div class="card" id="formularioFamilia" style="display: none;">
+            <h2>Ingrese la familia</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombreFamilia" class="form-label">Nombre común:</label>
+                    <input type="text" class="form-control" id="nombreFamilia" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="nombreCientifico" class="form-label">Nombre científico: </label>
+                    <input type="text" class="form-control" id="nombreCientifico" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="fruto" class="form-label">fruto:</label>
+                    <input type="tect" class="form-control" id="fruto" required="required">
+                </div>
+                <div class="mb-3">
+                    <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                    <label for="fileupload"></label>
+                </div>    
+            </form>
+            <button id="ingresarFamilia" type="submit" class="btn btn-primary" onclick="agregarFamilia()">Ingresar familia</button>
+        </div>
+    </div>
+
+
+
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Sistema botánico &copy; Todos los Derechos Reservados 2022 </p>
+        <div id="iconos">
+            <a href=""><i class="bi bi-spotify"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+<script>
+    var pressedButton = document.getElementById("ingresarFamilia");
+    pressedButton.addEventListener("click", function (event) {
+        alert("Se ingresó correctamente la familia..")
+    })
+</script>
+
+</html>
